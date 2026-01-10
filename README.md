@@ -1,24 +1,22 @@
-print("সিম্পল ক্যালকুলেটর")
-print("অপারেশন: + - * /\n")
 
-try:
-    num1 = float(input("প্রথম সংখ্যা দাও: "))
-    op   = input("কি করতে চাও? (+ - * /): ")
-    num2 = float(input("দ্বিতীয় সংখ্যা দাও: "))
+# Mini Calculator 🧮
 
-    if op == "+":
-        print(num1 + num2)
-    elif op == "-":
-        print(num1 - num2)
-    elif op == "*":
-        print(num1 * num2)
-    elif op == "/":
-        if num2 == 0:
-            print("দুঃখিত! শূন্য দিয়ে ভাগ করা যায় না 😅")
-        else:
-            print(num1 / num2)
-    else:
-        print("ভুল অপারেশন! শুধু +, -, *, / চলে")
+আমার প্রথম Python প্রজেক্ট!  
+একদম সিম্পল ক্যালকুলেটর — যোগ, বিয়োগ, গুণ, ভাগ করতে পারে।  
+Beginner friendly + error handling আছে (যেমন ০ দিয়ে ভাগ করলে এরর)।
 
-except ValueError:
-    print("দয়া করে শুধু সংখ্যা দাও!")
+### Features:
+- যোগ (+)  
+- বিয়োগ (-)  
+- গুণ (*)  
+- ভাগ (/)  
+- ভুল ইনপুট হলে মেসেজ দেখায়  
+- ০ দিয়ে ভাগ করা যাবে না (সেফটি ফিচার 😊)
+
+### How to Run:
+1. Python ইনস্টল করা থাকতে হবে  
+2. টার্মিনাল/কমান্ড প্রম্পট খোলো  
+3. এই কমান্ড দাও:
+
+```bash
+python Calculator.py
